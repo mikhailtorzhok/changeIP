@@ -69,9 +69,9 @@ netsh interface ipv4 add address name="Ethernet" address=192.168.5.4 255.255.255
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.5.151 1
+netsh interface ipv4 add dns "Ethernet" 192.168.5.151 2
 :: set new alternative DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.0.245 2 
+netsh interface ipv4 add dns "Ethernet" 192.168.0.245 1 
 goto bye
 
 :con3
@@ -97,9 +97,9 @@ netsh interface ipv4 add address name="Ethernet" address=192.168.5.20 255.255.25
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.5.151 1
+netsh interface ipv4 add dns "Ethernet" 192.168.5.151 2
 :: set new alternative DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.0.245 2
+netsh interface ipv4 add dns "Ethernet" 192.168.0.245 1
 goto bye
 
 :con4
@@ -125,9 +125,9 @@ netsh interface ipv4 add address name="Ethernet" address=192.168.5.11 255.255.25
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.5.151 1
+netsh interface ipv4 add dns "Ethernet" 192.168.5.151 2
 :: set new alternative DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.0.245 2
+netsh interface ipv4 add dns "Ethernet" 192.168.0.245 1
 goto bye
 
 :con5
@@ -153,9 +153,9 @@ netsh interface ipv4 add address name="Ethernet" address=192.168.5.246 255.255.2
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.5.151 1
+netsh interface ipv4 add dns "Ethernet" 192.168.5.151 2
 :: set new alternative DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.0.245 2
+netsh interface ipv4 add dns "Ethernet" 192.168.0.245 1
 goto bye
 
 :autosearch
