@@ -2,7 +2,7 @@
 cls
 :start
 ECHO.
-ECHO 1. Change Ethernet Static IP = 192.168.0.137 and 192.168.8.137 it's my ip just for test
+ECHO 1. Change Ethernet Static IP = 192.168.8.137 and 192.168.8.137 it's my ip just for test
 ECHO 2. Change Ethernet Static IP = 192.168.0.55 and 192.168.5.4 default GW = 192.168.5.151 DNS1=192.168.5.151 DNS2=192.168.0.245
 ECHO 3. Change Ethernet Static IP = 192.168.0.241 and 192.168.5.20 default GW = 192.168.5.151 DNS1=192.168.5.151 DNS2=192.168.0.245
 ECHO 4. Change Ethernet Static IP = 192.168.0.244 and 192.168.5.11 default GW = 192.168.5.151 DNS1=192.168.5.151 DNS2=192.168.0.245
@@ -35,15 +35,15 @@ goto start
 :con1
 ECHO Changing Connection 1
 ::set main IP, submusk and default gateway 
-netsh interface ip set address name="Ethernet" static 192.168.0.137 255.255.255.0 192.168.0.5
+netsh interface ip set address name="Ethernet" static 192.168.8.137 255.255.255.0 192.168.0.5
 ::set addition ip (Advansed button)
-netsh interface ipv4 add address name="Ethernet" address=192.168.8.137 255.255.255.0 192.168.8.5
+netsh interface ipv4 add address name="Ethernet" address=192.168.88.137 255.255.255.0 192.168.88.5
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.0.201 1
+netsh interface ipv4 add dns "Ethernet" 192.168.8.201 1
 :: set new alternative DNS
-netsh interface ipv4 add dns "Ethernet" 192.168.0.245 2
+netsh interface ipv4 add dns "Ethernet" 192.168.8.245 2
 goto bye
 
 :con2
