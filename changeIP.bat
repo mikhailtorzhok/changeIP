@@ -41,9 +41,9 @@ goto bye
 :con2
 ECHO Changing Connection 2
 ::set main IP, submusk and default gateway 
-netsh interface ip set address name="Ethernet" static 192.168.0.55 255.255.255.0 192.168.0.5
+netsh interface ip set address name="Ethernet" static 192.168.5.4 255.255.255.0 192.168.5.151
 ::set addition ip (Advansed button)
-netsh interface ipv4 add address name="Ethernet" address=192.168.5.4 255.255.255.0 192.168.5.151
+netsh interface ipv4 add address name="Ethernet" address=192.168.0.55 255.255.255.0 192.168.0.5
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
@@ -55,9 +55,9 @@ goto bye
 :con3
 ECHO Changing Connection 3
 ::set main IP, submusk and default gateway 
-netsh interface ip set address name="Ethernet" static 192.168.0.241 255.255.255.0 192.168.0.5
+netsh interface ip set address name="Ethernet" static 192.168.5.20 255.255.255.0 192.168.5.151
 ::set addition ip (Advansed button)
-netsh interface ipv4 add address name="Ethernet" address=192.168.5.20 255.255.255.0 192.168.5.151
+netsh interface ipv4 add address name="Ethernet" address=192.168.0.241 255.255.255.0 192.168.0.5
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
@@ -69,9 +69,9 @@ goto bye
 :con4
 ECHO Changing Connection 4
 ::set main IP, submusk and default gateway 
-netsh interface ip set address name="Ethernet" static 192.168.0.244 255.255.255.0 192.168.0.5
+netsh interface ip set address name="Ethernet" static 192.168.5.11 255.255.255.0 192.168.5.151
 ::set addition ip (Advansed button)
-netsh interface ipv4 add address name="Ethernet" address=192.168.5.11 255.255.255.0 192.168.5.151
+netsh interface ipv4 add address name="Ethernet" address=192.168.0.244 255.255.255.0 192.168.0.5
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
@@ -83,9 +83,9 @@ goto bye
 :con5
 ECHO Changing Connection 4
 ::set main IP, submusk and default gateway 
-netsh interface ip set address name="Ethernet" static 192.168.0.246 255.255.255.0 192.168.0.5
+netsh interface ip set address name="Ethernet" static 192.168.5.246 255.255.255.0 192.168.5.151
 ::set addition ip (Advansed button)
-netsh interface ipv4 add address name="Ethernet" address=192.168.5.246 255.255.255.0 192.168.5.151
+netsh interface ipv4 add address name="Ethernet" address=192.168.0.246 255.255.255.0 192.168.0.5
 ::clear DNS
 netsh interface ipv4 set dnsserver "Ethernet" static none
 :: set new first DNS
